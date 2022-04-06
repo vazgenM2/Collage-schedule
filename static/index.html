@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<!-- <link rel="icon" type="image/x-icon" href="../vdrsc.png"> -->
+	<title>ՎՁՏՊՔ Դասացուցակ</title>
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<div class="center start-page">
+			<h1 class="title">ՎՁՏՊՔ Դասացուցակ</h1>
+			<div>
+				<select name="course" class="course-name">
+					<option value="">Մասնագիտություն</option>
+					<option value="0411-1">0411 - I</option>
+					<option value="1015-1">1015 - I</option>
+					<option value="0613-1" selected>0613 - I</option>
+					<option value="1015-2">1015 - II</option>
+					<option value="0421-1">0421 - I</option>
+				</select>
+				<button class="course-btn">Դիտել</button>
+			</div>
+			<button>Տեղեկություն</button>
+		</div>
+
+		<div class="center course-page">
+			div.
+			<div class="week">
+				<p class="week-name">Երկուշաբթի</p>
+				<ul>
+					<li>Matem</li>
+					<li>dsdas</li>
+					<li>dsdasd</li>
+					<li>dsadasd</li>
+					<li>dsadas</li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="week">
+				<p class="week-name">Երեքշաբթի</p>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="week">
+				<p class="week-name">Չորեքշաբթի</p>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="week">
+				<p class="week-name">Հինգշաբթի</p>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="week">
+				<p class="week-name">Ուրբաթ</p>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+<script>
+	document.querySelector('.course-btn').addEventListener('click', () => {
+		if (document.querySelector('.course-name').value) {
+			// console.log(document.querySelector('.course-name').value)
+			document.querySelector('.start-page').style.display = 'none'
+			document.querySelector('.course-page').style.display = 'flex'
+		}
+	})
+</script>
+
+</html>
